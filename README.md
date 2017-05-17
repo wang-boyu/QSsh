@@ -8,7 +8,7 @@ Qt Creator's team!
 
 ### Prerequisites
 
-- Qt 5.x 
+- Qt 5.3 or later 
 - On Windows: MinGW 4.7 or later, Visual Studio 2010 or later
 - On Mac: XCode 2.5 or later, compiling on 10.4 requires setting the environment variable QTC_TIGER_COMPAT before running qmake
 
