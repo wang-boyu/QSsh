@@ -10,7 +10,9 @@ Qt Creator's team!
 
 - Qt 5.3 or later 
 - On Windows: MinGW 4.7 or later, Visual Studio 2010 or later
-- On Mac: XCode 6.4 or later, Qt5 installation prefix should be added into `CMAKE_PREFIX_PATH` if building with CMake
+- On Mac: Xcode 6.4 or later
+- On Linux: g++ 4.8 or later, clang++ 3.6 or later
+- Qt5 installation prefix should be added into `CMAKE_PREFIX_PATH` if building with CMake
 
 Compiling QSsh:
 
