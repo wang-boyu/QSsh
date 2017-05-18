@@ -58,11 +58,11 @@ matrix:
       env: LLVM_VERSION=3.8.1
       compiler: clang
     - os: linux
-      env: LLVM_VERSION=3.9.1
-      compiler: clang
+      env: COMPILER=clang++ LLVM_VERSION=3.9.1
+      compiler: gcc
     - os: linux
-      env: LLVM_VERSION=4.0.0
-      compiler: clang
+      env: COMPILER=clang++ LLVM_VERSION=4.0.0
+      compiler: gcc
 install:
   - DEPS_DIR="${TRAVIS_BUILD_DIR}/deps"
   - mkdir -p ${DEPS_DIR} && cd ${DEPS_DIR}
@@ -96,7 +96,7 @@ install:
         travis_retry wget --quiet -O - ${LIBCXX_URL}    | tar --strip-components=1 -xJ -C ${LLVM_DIR}/projects/libcxx
         travis_retry wget --quiet -O - ${LIBCXXABI_URL} | tar --strip-components=1 -xJ -C ${LLVM_DIR}/projects/libcxxabi
         travis_retry wget --quiet -O - ${CLANG_URL}     | tar --strip-components=1 -xJ -C ${LLVM_DIR}/clang
-        (cd ${LLVM_DIR}/build && cmake .. -DCMAKE_INSTALL_PREFIX=${LLVM_DIR}/install -DCMAKE_CXX_COMPILER=clang++)
+        (cd ${LLVM_DIR}/build && cmake .. -DCMAKE_INSTALL_PREFIX=${LLVM_DIR}/install -DCMAKE_CXX_COMPILER=g++)
         (cd ${LLVM_DIR}/build/projects/libcxx && make install -j4)
         (cd ${LLVM_DIR}/build/projects/libcxxabi && make install -j4)
       fi
