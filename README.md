@@ -10,7 +10,7 @@ Qt Creator's team!
 
 - Qt 5.3 or later 
 - On Windows: MinGW 4.7 or later, Visual Studio 2010 or later
-- On Mac: XCode 2.5 or later, compiling on 10.4 requires setting the environment variable QTC_TIGER_COMPAT before running qmake
+- On Mac: XCode 6.4 or later, Qt5 installation prefix should be added into `CMAKE_PREFIX_PATH` if building with CMake
 
 Compiling QSsh:
 
