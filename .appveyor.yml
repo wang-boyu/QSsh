@@ -1,0 +1,30 @@
+version: '{build}'
+
+branches:
+  only:
+    - master
+
+shallow_clone: true
+
+image: Visual Studio 2013
+
+environment:
+  matrix:
+  - CMAKE_GENERATOR: "Visual Studio 12 2013"
+    QT5: C:\Qt\5.3\mingw482_32
+  - CMAKE_GENERATOR: "Visual Studio 12 2013"
+    QT5: C:\Qt\5.3\msvc2013_opengl 
+  - CMAKE_GENERATOR: "Visual Studio 12 2013 Win64"
+    QT5: C:\Qt\5.3\msvc2013_64_opengl
+
+matrix:
+  fast_finish: true
+
+before_build:
+  - set Path=%QT5%\bin;%Path%
+  - mkdir build
+  - cd build
+  - cmake .. -G "%CMAKE_GENERATOR%" -DCMAKE_PREFIX_PATH="%QT5%"
+
+build_script:
+  - cmake --build .
