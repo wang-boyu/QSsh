@@ -1,4 +1,4 @@
-QSsh [![GitHub version](https://badge.fury.io/gh/wang-boyu%2FQSsh.svg)](https://badge.fury.io/gh/wang-boyu%2FQSsh) [![Build Status](https://travis-ci.org/wang-boyu/QSsh.svg?branch=master)](https://travis-ci.org/wang-boyu/QSsh) [![License: LGPL v2](https://img.shields.io/badge/License-LGPL%20v2-blue.svg)](LICENSE.LGPL)
+QSsh [![GitHub version](https://badge.fury.io/gh/wang-boyu%2FQSsh.svg)](https://badge.fury.io/gh/wang-boyu%2FQSsh) [![Build Status](https://travis-ci.org/wang-boyu/QSsh.svg?branch=master)](https://travis-ci.org/wang-boyu/QSsh) [![Build status](https://ci.appveyor.com/api/projects/status/xkjjowbsc8tc3otd/branch/master?svg=true)](https://ci.appveyor.com/project/wang-boyu/qssh/branch/master) [![License: LGPL v2](https://img.shields.io/badge/License-LGPL%20v2-blue.svg)](LICENSE.LGPL)
 ---
 
 QSsh provides SSH and SFTP support for Qt applications. The aim of this project is to provide an easy way to use these protocols in any Qt application.
