@@ -93,6 +93,7 @@ set(BotanLib_hdr botan.h)  #HEADERS += $$PWD/botan.h
         #msvc {
         if(MSVC)
             #QMAKE_CXXFLAGS_EXCEPTIONS_ON = -EHs
+            set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -EHs")
 
 
             #QMAKE_CXXFLAGS += -wd4251 -wd4290 -wd4250
