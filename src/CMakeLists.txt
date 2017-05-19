@@ -5,6 +5,8 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOMOC_STRICT OFF)
 
+add_definitions(-DQSSH_LIBRARY)
+
 set(QSshLib_src sftpchannel.cpp
                 sshconnection.cpp
                 sshkeypasswordretriever.cpp
