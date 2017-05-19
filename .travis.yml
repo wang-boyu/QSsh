@@ -106,10 +106,10 @@ install:
       export PATH="${LLVM_DIR}/clang/bin:${PATH}"
     fi
 before_script:
-  - BUILD_DIR="${TRAVIS_BUILD_DIR}/build"
-  - mkdir -p ${BUILD_DIR} && cd ${BUILD_DIR}
-  - cmake ..
-script: make -j4
+  - cd ${TRAVIS_BUILD_DIR}
+  - cmake -H. -Bbuild 
+script:
+  - cmake --build build -- -j4
 branches:
   only:
     - master
