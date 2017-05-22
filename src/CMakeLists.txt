@@ -81,7 +81,7 @@ add_library(qssh SHARED
     ${QSshLib_src}
     ${QSsshLib_hdr}
     ${QSshLib_ui_moc})
-target_link_libraries(qssh Qt5::Core Qt5::Network Qt5::Widgets botan)
+target_link_libraries(qssh Qt5::Core Qt5::Gui Qt5::Network Qt5::Widgets botan)
 set_target_properties(qssh PROPERTIES CLEAN_DIRECT_OUTPUT 1)
 set_target_properties(qssh PROPERTIES VERSION ${PROJECT_VERSION_STRING} SOVERSION ${PROJECT_VERSION_MAJOR})
 target_include_directories(qssh PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
@@ -90,7 +90,7 @@ add_library(qssh_static STATIC
     ${QSshLib_src}
     ${QSsshLib_hdr}
     ${QSshLib_ui_moc})
-target_link_libraries(qssh_static Qt5::Core Qt5::Network Qt5::Widgets botan)
+target_link_libraries(qssh_static Qt5::Core Qt5::Gui Qt5::Network Qt5::Widgets botan)
 set_target_properties(qssh_static PROPERTIES OUTPUT_NAME "qssh")
 set_target_properties(qssh_static PROPERTIES CLEAN_DIRECT_OUTPUT 1)
 target_include_directories(qssh_static PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

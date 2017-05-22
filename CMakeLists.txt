@@ -9,6 +9,6 @@ set(PROJECT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${P
 set(CMAKE_CXX_STANDARD 14)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
 
-find_package(Qt5 COMPONENTS Core Network Widgets REQUIRED)
+find_package(Qt5 COMPONENTS Core Gui Network Widgets REQUIRED)
 
 add_subdirectory(src)
