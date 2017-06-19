@@ -51,7 +51,7 @@ environment:
 
 before_build:
   - set Path=%QT5%\bin;%Path%
-  - cmake -H. -Bbuild -G "%CMAKE_GENERATOR%" -DCMAKE_PREFIX_PATH="%QT5%"
+  - cmake -H. -Bbuild -G "%CMAKE_GENERATOR%" -DCMAKE_PREFIX_PATH="%QT5%" -DCMAKE_SYSTEM_VERSION=10.0
 
 build_script:
   - cmake --build build -- %MSBUILD_FLAGS%
