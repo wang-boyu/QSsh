@@ -19,10 +19,8 @@ This project is based on Qt Creator's libQtcSsh.so. All the credits to Qt Creato
 - CMake
 
 ```bash
-$ mkdir build
-$ cd build
-$ cmake ..
-$ make -j4
+$ cmake -H. -Bbuild
+$ cmake --build build -- -j4
 ```
 
 - qmake
