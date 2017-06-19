@@ -7,7 +7,7 @@ branches:
 shallow_clone: true
 
 environment:
-  MSBUILD_FLAGS: /verbosity:detailed /maxcpucount
+  MSBUILD_FLAGS: /verbosity:minimal /maxcpucount
   matrix:
   - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2013
     CMAKE_GENERATOR: "Visual Studio 12 2013"
